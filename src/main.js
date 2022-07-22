@@ -1,5 +1,12 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import App from './App.vue'
 import router from './router'
+import {Form, Field, CellGroup, Checkbox} from 'vant';
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App);
+app.use(Form);
+app.use(Field);
+app.use(CellGroup);
+app.use(Checkbox);
+
+app.use(router).mount('#app')
